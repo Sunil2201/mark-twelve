@@ -31,15 +31,20 @@
 }
 .container{
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     min-height: 300px;
-    text-align: center;
+    text-align: left;
     margin: auto;
     padding: 1rem 2rem;
 }
 .heading{
+    text-align: center;
     font-size: 2rem;
     margin: 1rem 0rem;
+}
+.description{
+    text-align: center;
+    font-size: 1.5rem;
 }
 section{
     text-align: left;
@@ -72,4 +77,40 @@ button{
 }
 #outputBox{
     padding: 2rem 0rem;
+}
+.quizForm{
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+.questionContainer {
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+.questionContainer p {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.questionContainer label {
+    margin-right: 0.5rem;
+    width: 80%;
+    padding-top: 0rem;
+    font-size: 1.2rem;
+}
+.questionContainer input {
+    width: 5%;
+}
+.radioBtn{
+    vertical-align: middle;
+    margin-right: 0.3rem;
+}
+#submitAnswerBtn{
+    display: block;
+    margin: auto;
+}
+#output{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.8rem;
 }
