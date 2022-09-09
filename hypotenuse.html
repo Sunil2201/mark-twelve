@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hypotenuse</title>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="navBrand">Fun with Triangles</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a href="./index.html" class="link link-active">Is Triangle?</a>
+            </li>
+            <li class="list-item-inline">
+                <a href="./quiz.html" class="link">Quiz</a>
+            </li>
+            <li class="list-item-inline">
+                <a href="/" class="link">Hypotenuse</a>
+            </li>
+            <li class="list-item-inline">
+                <a href="" class="link">Area</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="heading">Calculate Hypotenuse</h1>
+        <p class="hypotenuseFormula">Length of Hypotenuse = sqrt(a<sup>2</sup> + b<sup>2</sup>)</p>
+
+        <section>
+            <label for="base-value">Enter base value(a):</label>
+            <input type="text" name="base" id="baseValue">
+
+            <label for="height-value">Enter height value(b):</label>
+            <input type="text" name="height" id="heightValue">
+
+            <button id="isTriangle">
+                Calculate Hypotenuse
+            </button>
+
+            <p id="outputBox"></p>
+        </section>
+
+    </div>
+    <script src="hypotenuse.js"></script>
+</body>
+</html>
