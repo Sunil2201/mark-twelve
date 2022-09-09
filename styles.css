@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.list-non-bullet{
+    list-style: none;
+}
+.list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+.navigation{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+.navigation .navBrand{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.navigation .nav-pills{
+    text-align: right;
+}
+.navigation .link{
+    color: white;
+    text-decoration: none;
+}
+.navigation .link-active{
+    font-weight: bold;
+}
+.container{
+    width: 100%;
+    max-width: 500px;
+    min-height: 300px;
+    text-align: center;
+    margin: auto;
+    padding: 1rem 2rem;
+}
+.heading{
+    font-size: 2rem;
+    margin: 1rem 0rem;
+}
+section{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0rem;
+}
+label{
+    width: 80%;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+input{
+    width: 80%;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    width: 12rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+#outputBox{
+    padding: 2rem 0rem;
+}
