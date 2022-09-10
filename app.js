@@ -35,14 +35,14 @@ function doAngleValidation(){
     if(val1 && val2 && val3){
         checkIsTriangle(val1, val2, val3)
     }
-    // else if(val1 === '' && !val2 === '' && !val3 === ''){
-    //     console.log("Bazinga!!")
-    //     outputSection.innerText = "Please enter angle1"
-    // }else if(val2 === '' && !val1 === '' && !val3 === ''){
-    //     outputSection.innerText = "Please enter angle2"
-    // }else if(val3 === '' && !val1 === '' && !val2 === ''){
-    //     outputSection.innerText = "Please enter angle3"
-    // }
+    else if(val1 === '' && val2 != '' && val3 != ''){
+        // console.log("Bazinga!!")
+        outputSection.innerText = "Please enter angle1"
+    }else if(val2 === '' && val1 != '' && val3 != ''){
+        outputSection.innerText = "Please enter angle2"
+    }else if(val3 === '' && val1 != '' && val2 != ''){
+        outputSection.innerText = "Please enter angle3"
+    }
     else{
         outputSection.innerText = "Please enter angle1, angle2 & angle3"
     }
