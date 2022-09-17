@@ -14,7 +14,7 @@ function calculateHypotenuse(val1, val2){
         outputSection.innerText = "Height value should be greater than zero"
     }
     else{
-        const ans = Math.sqrt(val1*val1 + val2*val2)
+        const ans = Math.sqrt(val1*val1 + val2*val2).toFixed(2)
         outputSection.innerText = `The length of hypotenuse is ${ans}`
     }
 }
@@ -22,8 +22,8 @@ function calculateHypotenuse(val1, val2){
 function checkValues(){
     const val1 = Number(baseValue.value)
     const val2 = Number(heightValue.value)
-    
-    if(val1 && val2){
+    console.log(val1, val2)
+    if(val1 != null && val2 != null){
         calculateHypotenuse(val1, val2)
     }
     else{

@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --primary-color:white;
+    --secondary-color:#6541F5;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #1A1A2F;
+    color: var(--primary-color);
+}
 .list-non-bullet{
     list-style: none;
 }
@@ -11,8 +20,8 @@
     padding: 0rem 0.5rem;
 }
 .navigation{
-    background-color: black;
-    color: white;
+    background-color: #20203C;
+    color: var(--primary-color);
     padding: 1rem;
 }
 .navigation .navBrand{
@@ -20,14 +29,15 @@
     font-size: 1.2rem;
 }
 .navigation .nav-pills{
+    padding-top: 0.5rem;
     text-align: right;
 }
 .navigation .link{
-    color: white;
+    color: var(--primary-color);
     text-decoration: none;
 }
 .navigation .link-active{
-    font-weight: bold;
+    color: var(--secondary-color);
 }
 .container{
     width: 100%;
@@ -64,19 +74,30 @@ input{
     width: 60%;
     border: 1px solid black;
     padding: 0.5rem;
-    border-radius: 0.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.0rem;
 }
 button{
-    background-color: white;
+    height: 2.5rem;
+    background-color: var(--primary-color);
     border: 1px solid black;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
     width: 12rem;
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 2rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 #outputBox{
-    padding: 2rem 0rem;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
 }
 .quizForm{
     max-width: 500px;
@@ -113,6 +134,7 @@ button{
     text-align: center;
     margin-top: 2rem;
     font-size: 1.8rem;
+    color: var(--secondary-color);
 }
 .formula{
     text-align: center;
@@ -120,5 +142,30 @@ button{
     width: 60%;
     padding: 0.2rem;
     margin: auto;
-    border: 1px solid black;
+    border: 1px solid var(--secondary-color);
 }
+.footer-header{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+ }
+ a{
+    color: var(--primary-color);
+    text-decoration: none;
+ }
+ span{
+    color: var(--secondary-color);
+ }
+ .footer{
+    margin-top: 1rem;
+    padding: 0rem 0rem 0.1rem 0;
+    text-align: center;
+ }
+ .list-non-bullet{
+    list-style: none;
+    padding: 0;
+ }
+ .list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem ;
+ }
