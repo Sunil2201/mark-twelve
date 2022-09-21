@@ -8,13 +8,21 @@ submitAnswerBtn.addEventListener("click", calculateScore)
 
 function calculateScore(){
     var score = 0;
-    var index = 0;
     const result = new FormData(quizForm)
+    let tempArr = []
     for(let value of result.values()){
-        if(value === correctAnswer[index]){
-            score += 1;
-        }
-        index += 1;
+        tempArr.push(value)
     }
-    outputSection.innerText = `Your score is ${score}`
+    if(tempArr.length == 10){
+        for(let i = 0; i < tempArr.length; i++){
+            if(tempArr[i] === correctAnswer[i]){
+                score += 1;
+            }
+            score=score;
+        }
+        outputSection.innerText = `Your score is ${score}`
+    }else{
+        outputSection.innerText = 'Please attempt all the questions'
+    }
+    // console.log(tempArr)
 }
