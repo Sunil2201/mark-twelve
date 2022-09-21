@@ -23,7 +23,7 @@ function checkValues(){
     const val1 = Number(baseValue.value)
     const val2 = Number(heightValue.value)
     console.log(val1, val2)
-    if(val1 != null && val2 != null){
+    if(baseValue.value != '' && heightValue.value != ''){
         calculateHypotenuse(val1, val2)
     }
     else{
